@@ -5,7 +5,7 @@ using namespace std;
 
 // example for inheritance
 
-class Categories{
+struct Categories{
 protected:
     string domain;
     string kingdom;
