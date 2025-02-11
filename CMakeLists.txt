@@ -5,9 +5,10 @@ project(cpp_oop LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(cpp_oop cpp_oop_1.cpp
+add_executable(cpp_oop
     README.md
-    LICENSE)
+    LICENSE
+    src/cpp_oop_1.cpp)
 
 include(GNUInstallDirs)
 install(TARGETS cpp_oop
