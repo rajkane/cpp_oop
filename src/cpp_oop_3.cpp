@@ -3,10 +3,10 @@
 
 using namespace std;
 
-// example for encapsulation
+// example for inheritance
 
-class Taxonom {
-private:
+class Categories{
+protected:
     string domain;
     string kingdom;
     string phylum;
@@ -17,7 +17,9 @@ private:
     string subfamily;
     string genus;
     string species;
+};
 
+class Taxonom : public Categories{
 public:
     Taxonom(string domain, string kingdom, string phylum,
             string clas, string order, string suborder, string family,
@@ -48,12 +50,12 @@ public:
     }
 };
 
-// int main()
-// {
-//     Taxonom taxonom("Eucaryota", "Animalia", "Chordata", "Mammalia", "Carnivora",
-//         "Feliformia", "Felidae", "Phantherinae", "Panthera", "P.tigris");
+int main()
+{
+    Taxonom taxonom("Eucaryota", "Animalia", "Chordata", "Mammalia", "Carnivora",
+        "Feliformia", "Felidae", "Phantherinae", "Panthera", "P.tigris");
 
-//     taxonom.get_info();
+    taxonom.get_info();
 
-//     return 0;
-// }
+    return 0;
+}

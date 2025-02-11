@@ -9,7 +9,8 @@ add_executable(cpp_oop
     README.md
     LICENSE
     src/cpp_oop_1.cpp
-    src/cpp_oop_2.cpp)
+    src/cpp_oop_2.cpp
+    src/cpp_oop_3.cpp)
 
 include(GNUInstallDirs)
 install(TARGETS cpp_oop
